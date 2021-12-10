@@ -1,7 +1,7 @@
 {
- "orden": "4",
- "title": "console.log(miNombre)",
- "h1": "<code class='language-javascript'>console.log(miNombre)</code>",
- "description": "Paso 4 de una prueba de escritorio con una variable: «console.log(miNombre)».",
+ "orden": "10",
+ "title": "mensaje(c) {",
+ "h1": "<code class='language-javascript'>mensaje(c) {</code>",
+ "description": "Paso 10 de una prueba de escritorio con un objeto: «mensaje(c) {».",
  "esPruebaDeEscritorio":true
 }

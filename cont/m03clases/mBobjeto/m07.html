@@ -4,16 +4,14 @@
 <span class="numero2">4</span> constructor(b) {
 <span class="numero2">5</span>  this.a = b
 <span class="numero2">6</span> }
-<span class="numero3">10</span>mensaje(c) {
-<span class="activo">12</span> console.log(<span
-class="numero3">11</span>c + this.a)
+   mensaje(c) {
+    console.log(c + this.a)
    }
   }
-<span class="numero1">8</span>const a = <span class="descongela"><span
-class="numero1">2</span>new <span
-class="numero1">3</span>Cl01(4)</span><span
-class="numero1">7</span>&rarr;<a href="#id2">2</a>
-<span class="numero1">9</span>a.mensaje(2)</pre>
+  const a = <span class="descongela"><span class="numero1">2</span>new <span
+  class="numero1">3</span>Cl01(4)</span><span
+  class="activo">7</span>&rarr;<a href="#id2">2</a>
+  a.mensaje(2)</pre>
 </section>
 <section id="stack">
  <h1>Stack</h1>
@@ -25,7 +23,7 @@ class="numero1">7</span>&rarr;<a href="#id2">2</a>
     <th><span class="numero1">1</span>Cl01</th>
     <td><span class="numero1">1</span><a href="#id1">1</a></td>
    </tr>
-   <tr>
+   <tr id="congela">
     <th colspan="2"><span class="numero1">3</span>congela</th>
    </tr>
    <tr>
@@ -64,48 +62,12 @@ class="numero1">7</span>&rarr;<a href="#id2">2</a>
      </div>
     </td>
    </tr>
-   <tr class="descongela">
+   <tr id="descongela" class="descongela">
     <th colspan="2">
-     <span class="numero1">7</span> descongela
+     <span class="activo">7</span> descongela
      <span class="numero1">3</span> con
      <a href="#id2">2</a>
     </th>
-   </tr>
-   <tr id="script_a">
-    <th><span class="numero1">8</span>a</th>
-    <td><span class="numero1">8</span><a href="#id2">2</a></td>
-   </tr>
-   <tr id="congela2">
-    <th colspan="2"><span class="numero1">9</span>congela</th>
-   </tr>
-   <tr>
-    <td colspan="2">
-     <div id="crea_mensaje" class="creación">
-      <span><span class="numero3">10</span></span>
-      <table class="frame tabla2">
-       <caption>Cl01.mensaje</caption>
-       <tr id="this2">
-        <th>
-         <span class="numero3">10</span>
-         <span class="parametro1">this</span>
-        </th>
-        <td>
-         <span class="numero3">10</span>
-         <a class="parametro1" href="#id2">2</a>
-        </td>
-       </tr>
-       <tr id="c">
-        <th>
-         <span class="numero3">10</span>
-         <span class="parametro2">c</span>
-        </th>
-        <td>
-         <span class="numero3">10</span>
-         <span class="parametro2">2</span>
-        </td>
-       </tr>
-      </table>
-    </td>
    </tr>
   </table>
  </div>
@@ -133,10 +95,6 @@ class="numero1">7</span>&rarr;<a href="#id2">2</a>
   </table>
  </div>
 </section>
-<section id="consola">
- <h1>Consola</h1>
- <span id="console1">6<span class="activo">12</span></span>
-</section>
 <section id="expresiones">
  <h1>Expresiones</h1>
  <pre><code class="language-javascript"><span
@@ -149,26 +107,14 @@ class="numero1">7</span>&rarr;<a href="#id2">2</a>
  <pre><code class="language-javascript"><span
  class="numero2">5</span><a href="#this">this</a>.<a href="#a">a</a> = <a href="#b">b</a>
    <a href="#id2">2</a>  .<a href="#a">a</a> = 4</code></pre>
- <pre><code class="language-javascript"><span
- class="numero1">9</span><a href="#script_a">a</a>.mensaje(2)
-  <a class="parametro1" id="p21" href="#id2">2</a>.mensaje(<a
-   class="parametro2" id="p22">2</a>)</code></pre>
- <pre id="parametros2"><code class="language-javascript"><span
- class="numero3">10</span><a class="parametro1" href="#this2">this</a>.mensaje(<a
- class="parametro2" href="#c">c</a>)</code></pre>
- <pre id="op1"><code class="language-javascript"><span
- class="numero3">11</span><a href="#c">c</a> + <a
- href="#this2">this</a>.<a href="#a">a</a>
-   2 + 4
-     6</code></pre>
 </section>
 <section id="explicación">
  <h1>Explicación</h1>
  <ul>
   <li>
    <p>
-    Se <a href="#console1">muestra el resultado</a> de la expresión <a
-      href="#op1">11</a>.
+    <a href="#descongela">Descongela</a> el
+    <a href="#congela">último registro de activación congelado en el stack</a>.
    </p>
   </li>
  </ul>
