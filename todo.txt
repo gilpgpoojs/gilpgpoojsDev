@@ -1,4 +1,4 @@
-1. Primera versión completa sin sw.js.
+1. Ok hasta m02objsBasicos.
 2. Añadir los enlaces para depurar en GilPG Nod
 2. Revisar GilPG Nod para que funcione bien sin conexión
 2. en 20 / C resumen quitar el ; de la imagen
