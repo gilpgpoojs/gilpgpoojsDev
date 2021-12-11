@@ -1,7 +1,6 @@
 {
  "orden": "14",
- "title": "console.log(miNombre)",
- "h1": "<code class='language-javascript'>console.log(miNombre)</code>",
- "description": "Paso 14 de una prueba de escritorio con un objeto: «console.log(miNombre)».",
+ "title": "Descongela y termina",
+ "description": "Paso 14 de una prueba de escritorio con un objeto: «Descongela y termina».",
  "esPruebaDeEscritorio":true
 }
