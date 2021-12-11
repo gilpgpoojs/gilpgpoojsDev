@@ -1,6 +1,7 @@
-1. Ok hasta m03clases/mBobjeto/12
-2. Añadir los enlaces para depurar en GilPG Nod
-2. Revisar GilPG Nod para que funcione bien sin conexión
-2. en 20 / C resumen quitar el ; de la imagen
-3. Volver a poner los estilos para las barras de scroll
-3. Agregar metadatos para que los enlaces puedan obtener el ícono de la página.
+* Ok hasta m07excepciones/mAthrow
+* Añadir los enlaces para depurar en GilPG Nod
+* Revisar GilPG Nod para que funcione bien sin conexión
+* Agregar pruebas de escritorio para funciones y paso de parámetros.
+* Volver a poner los estilos para las barras de scroll
+* Agregar metadatos para que los enlaces puedan obtener el ícono de la página.
+* Cambiar los metadatos de los archivos al index.json
