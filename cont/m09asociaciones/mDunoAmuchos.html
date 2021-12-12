@@ -1,51 +1,36 @@
 <div class="lectura">
- <ul>
-  <li>
-   <p>
-    Cuando la condición de
-    <code class="language-javascript">if</code>
-    es false, se salta la instrucción o el bloque de instrucciones que
-    la estructura tiene asociada.
-   </p>
-  </li>
-  <li>
-   <p>
-    Posteriormente se ejecutan las instrucciones que vengan después de la
-    estructura.
-   </p>
-  </li>
- </ul>
-</div>
-<section>
- <h1>Ejemplo</h1>
- <div class="horizontal">
-  <muestra-codigo>
-   <div>
-    <div><span style="color: #0000ff;">const</span> <span
-       style="color: #0070c1;">fruta</span> = <span
-       style="color: #a31515;">"fresa"</span></div>
-    <div><span style="color: #af00db;">if</span> (<span
-       style="color: #0070c1;">fruta</span> === <span
-       style="color: #a31515;">"pera"</span>) {</div>
-    <div>&nbsp;<span style="color: #001080;">console</span>.<span
-       style="color: #795e26;">log</span>(</div>
-    <div>&nbsp; <span style="color: #a31515;">"El que es 🍐, desespera."</span>)
-    </div>
-    <div>}</div>
-    <div><span style="color: #001080;">console</span>.<span
-       style="color: #795e26;">log</span>(<span style="color: #a31515;">"Tu
-      fruta:"</span>, <span style="color: #0070c1;">fruta</span>)</div>
-   </div>
-  </muestra-codigo>
-  <section>
-   <h1>Salida</h1>
-   <pre><samp>Tu fruta: fresa</samp></pre>
-  </section>
- </div>
- <div class="noPrint lectura">
+ <section>
+  <h1>Imagina</h1>
+  <figure>
+   <img src="/img/m09asociaciones/uno_a_muchos.svg"
+     alt="Imagina asociaciones uno a muchos">
+  </figure>
+ </section>
+ <section>
+  <h1>Diagrama de Clases</h1>
+  <figure>
+   <img src="/img/m09asociaciones/clases_uno_a_muchos.svg"
+     alt="Diagrama de clases a uno a muchos">
+  </figure>
+ </section>
+ <section>
+  <h1>Frases</h1>
+  <ul>
+   <li>
+    <p>Un juguete2 <em>pertenece</em> a <strong>un infante2</strong>.</p>
+   </li>
+   <li>
+    <p>Un infante2 <em>tiene</em> <strong>muchos juguetes2</strong>.</p>
+   </li>
+  </ul>
+ </section>
+ <section>
+  <h1>Código</h1>
   <p>
-   <a href="https://pythontutor.com/javascript.html#code=const%20fruta%20%3D%20%22fresa%22%0Aif%20%28fruta%20%3D%3D%3D%20%22pera%22%29%20%7B%0A%20console.log%28%0A%20%20%22El%20que%20es%20%F0%9F%8D%90,%20desespera.%22%29%0A%7D%0Aconsole.log%28%22Tu%20fruta%3A%22,%20fruta%29&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
-     target="_blank" rel="noopener">Depúralo en JavaScript Tutor.</a>
+   <a href="http://pythontutor.com/javascript.html#code=class%20Juguete2%20%7B%0A%20%20constructor%28nombre%29%20%7B%0A%20%20%20%20this.nombre%20%3D%20nombre%3B%0A%20%20%20%20this.pertenece%20%3D%20null%3B%0A%20%20%7D%0A%7D%0Aclass%20Infante2%20%7B%0A%20%20constructor%28nombre%29%20%7B%0A%20%20%20%20this.nombre%20%3D%20nombre%3B%0A%20%20%20%20this.tiene%20%3D%20%5B%5D%3B%0A%20%20%7D%0A%7D%0Aconst%20tTt%20%3D%20new%20Infante2%28%22tt%22%29%3B%0Alet%20tSpid%20%3D%20new%20Juguete2%28%22spiderant%22%29%3B%0Alet%20tWon%20%3D%20new%20Juguete2%28%22wonderant%22%29%3B%0AtTt.tiene%20%3D%20%5BtSpid,%20tWon%5D%3B%0AtSpid.pertenece%20%3D%20tTt%3B%0AtWon.pertenece%20%3D%20tTt%3B%0AtSpid%20%3D%20null%3B%0AtWon%20%3D%20null%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D"
+     target="_blank" rel="noopener">
+    Programa animado de asociaciones uno a muchos.
+   </a>
   </p>
- </div>
-</section>
+ </section>
+</div>
