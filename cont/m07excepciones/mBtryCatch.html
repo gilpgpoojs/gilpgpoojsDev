@@ -9,37 +9,76 @@
  </figure>
 </div>
 <div class="lectura">
- <p>
-  Para procesar los errores, la instrucción
-  <code class="language-javascript">throw</code>
-  debe ejecutarse dentro de las llaves de
-  <code class="language-javascript">try</code>.
- </p>
- <p>
-  Si llega al final de las llaves de
-  <code class="language-javascript">try</code>
-  sin lanzar ninguna excepción, la cláusula
-  <code class="language-javascript">catch</code>
-  y las
-  <i>instrucciones para procesar la excepción</i>
-  no se ejecutan, continuando con las instrucciones que
-  vengan después de la estructura completa
-  <code class="language-javascript">try-catch</code>.
- </p>
- <p>
-  Si se lanza una excepción dentro de las llaves de
-  <code class="language-javascript">try</code>,
-  las restantes instrucciones hasta cerrar llaves no se ejecutan.
-  Se toma la excepción lanzada; a este proceso se le llama
-  <dfn>atrapar la excepción</dfn>. La excepción atrapada se pasa
-  como parámetro a la cláusula
-  <code class="language-javascript">catch</code>
-  el flujo normal se restablece y se ejecutan las
-  <i>instrucciones para procesar la excepción</i>,
-  continuando con las instrucciones que vengan después de la
-  estructura completa
-  <code class="language-javascript">try-catch</code>.
- </p>
+ <ul>
+  <li>
+   <p>
+    Para procesar los errores, la instrucción
+    <code class="language-javascript">throw</code>
+    debe ejecutarse dentro de las llaves de
+    <code class="language-javascript">try</code>.
+   </p>
+  </li>
+  <li>
+   <p>
+    Si llega al final de las llaves de
+    <code class="language-javascript">try</code>
+    sin lanzar ninguna excepción, se hace lo siguiente:
+   </p>
+   <ul>
+    <li>
+     <p>
+      La cláusula
+      <code class="language-javascript">catch</code>
+      y las
+      <i>instrucciones para procesar la excepción</i>
+      no se ejecutan.
+     </p>
+    </li>
+    <li>
+     <p>
+      Continua con las instrucciones que vengan después de la estructura
+      completa
+      <code class="language-javascript">try-catch</code>.
+     </p>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <p>
+    Si se lanza una excepción dentro de las llaves de
+    <code class="language-javascript">try</code>,
+    se hace lo siguiente:
+   </p>
+   <ul>
+    <li>
+     <p>
+      Las restantes instrucciones hasta cerrar llaves no se ejecutan.
+     </p>
+    </li>
+    <li>
+     <p>
+      Se toma la excepción lanzada; a este proceso se le llama
+      <dfn>atrapar la excepción</dfn>.
+     </p>
+    </li>
+    <li>
+     <p>
+      La excepción atrapada se pasa como parámetro a la cláusula
+      <code class="language-javascript">catch</code>
+      el flujo normal se restablece y se ejecutan las
+      <i>instrucciones para procesar la excepción</i>.
+     </p>
+    </li>
+    <li>
+     <p>
+      Continua con las instrucciones que vengan después de la estructura
+      completa
+      <code class="language-javascript">try-catch</code>.
+     </p>
+    </li>
+   </ul>
+  </li>
+ </ul>
 </div>
 <section>
  <h1>Ejemplo</h1>
